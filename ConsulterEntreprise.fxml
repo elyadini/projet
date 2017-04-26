@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConsulterEntreprise">
+   <children>
+      <AnchorPane prefHeight="496.0" prefWidth="947.0">
+         <children>
+             <TableView fx:id="table" editable="true" layoutX="8.0" layoutY="69.0" prefHeight="432.0" prefWidth="1089.0">
+              <columns>
+                <TableColumn fx:id="identreprise1" prefWidth="33.0" text="id" />
+                <TableColumn fx:id="nomEntreprise1" prefWidth="126.0" text="Nom d'Entreprise" />
+                  <TableColumn fx:id="secteur1" prefWidth="28.0" text="Scteur" />
+                  <TableColumn fx:id="numrue1" prefWidth="141.0" text="Adrresse" />
+                  <TableColumn fx:id="codeP1" prefWidth="124.0" text="Code Postale" />
+                  <TableColumn fx:id="ville1" prefWidth="87.0" text="Ville" />
+                  <TableColumn fx:id="tel1" prefWidth="67.0" text="Tel" />
+                  <TableColumn fx:id="mail1" prefWidth="88.0" text="Mail" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Label layoutX="349.0" layoutY="23.0" prefHeight="29.0" prefWidth="256.0" text="Liste des entreprises">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
